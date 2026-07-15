@@ -4,7 +4,7 @@
     
     <springProperty scope="context" name="springAppName" source="spring.application.name" defaultValue="application"/>
     
-    <property name="LOG_FILE_PATH" value="/var/log/bakery/${springAppName}" />
+    <property name="LOG_FILE_PATH" value="${LOG_PATH:-${user.home}/logs/${springAppName}}" />
     <property name="LOG_FILE_NAME" value="${LOG_FILE_PATH}/${springAppName}.log" />
     <property name="LOG_FILE_PATTERN" value="${LOG_FILE_PATH}/${springAppName}-%d{yyyy-MM-dd}.%i.log" />
 
