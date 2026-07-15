@@ -1,4 +1,4 @@
-package com.shah_s;
+package com.blubugtech;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

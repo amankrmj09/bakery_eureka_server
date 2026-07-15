@@ -33,5 +33,5 @@
     </root>
 
     <!-- Specific log levels -->
-    <logger name="com.shah_s" level="DEBUG" />
+    <logger name="com.blubugtech" level="DEBUG" />
 </configuration>
