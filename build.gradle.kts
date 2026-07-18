@@ -33,7 +33,7 @@ dependencies {
 
     // 8. Tooling & Lombok
     developmentOnly("org.springframework.boot:spring-boot-devtools")
-    // runtimeOnly("io.micrometer:micrometer-registry-prometheus")
+    runtimeOnly("io.micrometer:micrometer-registry-prometheus")
 
     // 9. Testing
     testImplementation("org.springframework.boot:spring-boot-starter-test")
