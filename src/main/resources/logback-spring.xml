@@ -4,9 +4,11 @@
     
     <springProperty scope="context" name="springAppName" source="spring.application.name" defaultValue="application"/>
     
+    <property name="HOSTNAME" value="${HOSTNAME:-unknown}"/>
+    
     <property name="LOG_FILE_PATH" value="${LOG_PATH:-${user.home}/logs/${springAppName}}" />
-    <property name="LOG_FILE_NAME" value="${LOG_FILE_PATH}/${springAppName}.log" />
-    <property name="LOG_FILE_PATTERN" value="${LOG_FILE_PATH}/${springAppName}-%d{yyyy-MM-dd}.%i.log" />
+    <property name="LOG_FILE_NAME" value="${LOG_FILE_PATH}/${springAppName}-${HOSTNAME}.log" />
+    <property name="LOG_FILE_PATTERN" value="${LOG_FILE_PATH}/${springAppName}-${HOSTNAME}-%d{yyyy-MM-dd}.%i.log" />
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -33,5 +35,5 @@
     </root>
 
     <!-- Specific log levels -->
-    <logger name="com.blubugtech" level="DEBUG" />
+    <logger name="org.blubakery" level="DEBUG" />
 </configuration>
