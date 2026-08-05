@@ -146,6 +146,6 @@ docker run -d -p 8761:8761 --name bakery-eureka-server -e ACTIVE_PROFILE=docker 
 ---
 
 ## 🔗 Related Links
-- [Parent Repository](https://github.com/amankrmj09/Blu_s_Bakery)
-- [API Reference](./API_REFERENCE.md)
-- [Main Platform README](../README.md)
+
+*For overall architecture, contribution guidelines, and security policies, please refer to the main [Blu's Bakery](https://github.com/amankrmj09/Blu_s_Bakery) repository.*
+
